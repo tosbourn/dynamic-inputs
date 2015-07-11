@@ -13,7 +13,8 @@
   <div class="input-group" id='option-input-{{index}}'>
     <span class="input-group-addon">{{index}}</span>
     <input type="text" name='option-{{index}}' class="form-control option-text" data-order='{{index}}' value='{{value}}'
-      placeholder='Key a description for option {{order}}...' autofocus />
+      placeholder='Key a description for option {{order}}...' autofocus
+      maxlength="120"/>
     <span class="input-group-addon" id='remove-option' data-order='{{index}}'>
       <i class="fa fa-times"></i>
     </span>
