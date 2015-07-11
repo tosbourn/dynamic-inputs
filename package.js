@@ -7,7 +7,7 @@ Package.describe({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.0');
-  api.use(['jquery', 'tracker', 'templating'], '/client');
+  api.use(['jquery', 'tracker', 'templating'], 'client');
   api.addFiles(['tosbourn:dynamic-inputs.html', 'tosbourn:dynamic-inputs.js'], 'client');
 });
 
