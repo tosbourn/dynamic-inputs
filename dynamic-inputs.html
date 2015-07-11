@@ -1,0 +1,21 @@
+<template name='dynamicInputs'>
+  <div class="form-group">
+    <div id='option-inputs'>
+      {{#each inputItems}}
+        {{> optionInput}}
+      {{/each}}
+    </div>
+    <a href='#' id='add-option' class='btn btn-primary'>Add</a>
+  </div>
+</template>
+
+<template name='optionInput'>
+  <div class="input-group" id='option-input-{{index}}'>
+    <span class="input-group-addon">{{index}}</span>
+    <input type="text" name='option-{{index}}' class="form-control option-text" data-order='{{index}}' value='{{value}}'
+      placeholder='Key a description for option {{order}}...' autofocus />
+    <span class="input-group-addon" id='remove-option' data-order='{{index}}'>
+      <i class="fa fa-times"></i>
+    </span>
+  </div>
+</template>
